@@ -1,2 +1,115 @@
-# Analytical-Lexicon-and-Concordance-of-the-Greek-New-Testament-eBible.gr-Reference-Links
-A Python tool for enriching the Analytical Lexicon and Concordance of the Greek New Testament with clickable Bible references linking to ebible.gr.
+# Analytical Lexicon and Concordance of the Greek New Testament  
+## with eBible.gr Reference Links
+
+This repository contains a Python script that adds **interactive Bible reference hyperlinks** to a PDF file of the work  
+**Analytical Lexicon and Concordance of the Greek New Testament**.
+
+The script detects biblical references such as *Mt 7:3*, *Lk 6:14*, *Jn 1:19–23*, etc., within the text and converts them into clickable links pointing to **ebible.gr**, allowing direct navigation from lexicon entries to the biblical text.
+
+---
+
+## 📖 About the Source Work
+
+This project is designed to work with the following scholarly publication:
+
+> **Analytical Lexicon and Concordance of the Greek New Testament**  
+> Copyright © 2025 by **Alan Bunning**. All rights reserved.  
+> **Center for New Testament Restoration**  
+> *January 28, 2025 electronic edition*
+
+This work is released under the  
+**Creative Commons Attribution–ShareAlike 4.0 International License (CC BY-SA 4.0)**.
+
+Attribution **must** be given to **Alan Bunning** and the **Center for New Testament Restoration** in any derivative works, and any changes made must be clearly indicated.
+
+A printed version of this work has been published by **GlossaHouse**  
+https://glossahouse.com  
+and is priced to recover the publisher’s costs, with **no profit** going to Alan Bunning or the Center for New Testament Restoration.
+
+---
+
+## ✨ Features
+
+- PDF processing using **PyMuPDF (fitz)**
+- Detection of biblical references:
+  - Full references: `Mt 7:3–5`
+  - Chapter–verse references: `Lk 6:14`
+  - Verse-only references with inherited context
+- Support for **superscript footnote markers** (e.g. `6:14³⁵`)
+- Correct context inheritance across **line breaks and page breaks**
+- Automatic generation of links such as:
+  ```
+  https://ebible.gr/collate/luk.6.14
+  ```
+- The original PDF content is preserved (only hyperlinks are added)
+
+---
+
+## 📁 Files
+
+- `add_links.py`  
+  The main Python script that scans the PDF and inserts hyperlinks.
+
+- `ALC.pdf`  
+  The original PDF file (not included in this repository due to copyright).
+
+- `ALC_ebible_links.pdf`  
+  The generated PDF with active Bible reference links.
+
+---
+
+## ⚙️ Requirements
+
+- Python **3.9+**
+- PyMuPDF
+
+Install the dependency:
+
+```bash
+pip install pymupdf
+```
+
+---
+
+## ▶️ Usage
+
+1. Place the source PDF in the same directory as the script:
+   ```text
+   ALC.pdf
+   ```
+
+2. Run the script:
+   ```bash
+   python add_links.py
+   ```
+
+3. The output file will be created:
+   ```text
+   ALC_ebible_links.pdf
+   ```
+
+with clickable Bible references throughout the document.
+
+---
+
+## 🧠 Technical Notes
+
+- The script reads the PDF at **character level** using `rawdict`
+- Superscript footnote digits are ignored so that:
+  - `Lk 6:14³⁵` → `luk 6:14`
+- A combination of **regular expressions and contextual inheritance**
+  ensures accurate interpretation of verse-only references
+- Hyperlinks are inserted using precise bounding boxes around the detected text
+
+---
+
+## 📖 Purpose
+
+This tool was created for academic and research use, with the aim to:
+
+- Improve navigation within theological and biblical studies
+- Link lexicographical references directly to the biblical text
+- Support scholarly study of the Greek New Testament
+
+
+
