@@ -28,6 +28,14 @@ and is priced to recover the publisher’s costs, with **no profit** going to Al
 
 ---
 
+## Textual Criticism and Collation of Greek Manuscripts
+
+The links to **ebible.gr** provide access to a **manuscript collation** view in which Greek New Testament witnesses are compared verse by verse, revealing **textual variants** between early manuscripts and modern critical texts.  
+
+In addition, the interface includes **three modern Greek translations**, facilitating more accessible engagement with the ancient Greek text.
+
+---
+
 ## ✨ Features
 
 - PDF processing using **PyMuPDF (fitz)**
