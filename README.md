@@ -115,13 +115,24 @@ with clickable Bible references throughout the document.
 
 ---
 
-## 📖 Purpose
+## Web Conversion
 
-This tool was created for academic and research use, with the aim to:
+The work **Analytical Lexicon and Concordance of the Greek New Testament** has also been converted into an **interactive web edition**, available at:
 
-- Improve navigation within theological and biblical studies
-- Link lexicographical references directly to the biblical text
-- Support scholarly study of the Greek New Testament
+👉 **https://www.ebible.gr/alc**
 
+The web version provides:
+- direct navigation through lexicographical entries,
+- active Bible reference links,
+- access to **textual criticism** and **manuscript collation** tools,
+- comparison of Greek manuscript witnesses and critical texts,
+- parallel display of modern Greek translations,
+- and a built-in **search functionality** for lexicon entries.
+
+In addition, the web edition supports **URL-based search queries**, allowing direct access to search results using the following syntax:
+   ```text
+   https://www.ebible.gr/alc?q={word}
+   ```
+Search queries are processed **without diacritics (accents)**, enabling flexible and user-friendly lookup of Greek words regardless of accentuation.
 
 
