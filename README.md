@@ -34,6 +34,10 @@ The links to **ebible.gr** provide access to a **manuscript collation** view in 
 
 In addition, the interface includes **three modern Greek translations**, facilitating more accessible engagement with the ancient Greek text.
 
+Below is an example of the **manuscript collation interface** on **ebible.gr**, where Greek New Testament witnesses are compared verse by verse, highlighting **textual variants** and supported by interlinear analysis and modern Greek translations.
+
+<img width="1098" height="789" alt="{7D0FBC67-2E52-4148-917A-520A768CA24F}" src="https://github.com/user-attachments/assets/09cfd1f9-3163-4bb9-944a-74259d5d3544" />
+
 ---
 
 ## ✨ Features
